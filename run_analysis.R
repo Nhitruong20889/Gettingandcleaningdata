@@ -31,7 +31,7 @@ colnames(my_x)<-var_feature[select_var[ ,1] ,2]
 ## Name the activities in the data set using descriptive activity names
 colnames(my_y)<-"activity"
 my_y$actlabel <- factor(my_y$activity, labels = as.character(act_labels[ ,2]))
-actlabel <-my_y[ ,-1]
+actlabel <-my_y[ ,2]
 
 ##tidy data set with avg of each var. for each activity and each subject
 colnames(my_sub) <-"subject"
