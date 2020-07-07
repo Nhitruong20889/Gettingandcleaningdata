@@ -24,7 +24,7 @@ my_y <-rbind(ytrain, ytest)
 my_sub <-rbind(subtrain,subtest)
 
 ## Extract only measurements on the mean+std for each measurements
-select_var <-var_feature[grep("mean\\(\\)|std\\(\\)", var_feature[ ,2]), ]
+select_var <-var_feature[grep("mean(\\)|std(\\)", var_feature[ ,2]), ]
 my_x <-my_x[ , select_var[ ,1]]
 colnames(my_x)<-var_feature[select_var[ ,1] ,2]
 
