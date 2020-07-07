@@ -29,7 +29,13 @@ The code includes following steps
     my_sub: 10299 obs. of 1 var.
     
   3. Extract the required data values (mean and std) and assign col. manes 
-    For x variable:
+    For x, y variables:
       create vector for defining data with "mean and std labels"
-      extract all selected values and assigned with the same mane my_x
-      label my_x data table with 
+      extract all selected values and assigned with the same mane my_x and my_y
+      label col names for my_x and my_y data tables 
+   4. Create and save the outcome datatable as tidydata
+   combine all x, y and sub data into a data table with 10299 obs of 68 var. using cbind function
+   create a subset of sum. mean of  all data by filter/group by activity lables and subject
+   save a subset data table under the name _ tidydata.txt under the same folder of the orgin data
+   
+      
